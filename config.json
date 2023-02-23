@@ -1,0 +1,12 @@
+{
+    "user":"",
+    "port":465,
+    "smtp":"smtp.gmail.com",
+    "From":"",
+    "To":"",
+    "CC":[""],
+    "Subject":"Cambio Password su Satellite",
+    "sleep_time":10,
+    "image_name":"image.png",
+    "image_delete":true
+}
