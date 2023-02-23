@@ -53,9 +53,9 @@ if __name__ == '__main__':
     while True:
         sleep(config['sleep_time'])
         #controllo se l'hash corrente dell'utente specificato è uguale a quello salvato nel file
-        if get_hash(config('user')) != old_hash:
+        if get_hash(config['user']) != old_hash:
             #ripristino del vecchio hash e quindi della vecchia password
-            restore_hash(config('user'))
+            restore_hash(config['user'])
             #creazione della mail
             text = '{}\nE\' stata cambiata la password sul pc {}.'.format(asctime(),gethostname())
             msg = mail_header(config['From'],config['To'],config['CC'],config['Subject'],text)
